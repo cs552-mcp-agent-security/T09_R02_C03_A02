@@ -1,97 +1,105 @@
 {
-"br":{
-  "cmd": "git branch -vv",
-  "help":"show local branches"},
-"clean":{
-  "cmd": "git clean -dfx",
-  "help": "remove all untracked files/folders"},
-"diff":{
-  "cmd": "git diff",
-  "help": "git show differences"},
-"difftool":{
-  "cmd": "git difftool",
-  "disable_async": true,
-  "help": "show differences using a tool"
+  "br": {
+    "cmd": "git branch -vv",
+    "help": "show local branches"
   },
-"fetch":{
-  "cmd": "git fetch",
-  "allow_all": true,
-  "help": "fetch remote update"
+  "clean": {
+    "cmd": "git clean -dfx",
+    "help": "remove all untracked files/folders"
   },
-"last":{
-  "cmd": "git log -1 HEAD",
-  "help": "show log information of HEAD"
+  "diff": {
+    "cmd": "git diff",
+    "help": "git show differences"
   },
-"lo":{
-  "cmd": "git log --oneline -7",
-  "allow_all": true,
-  "help": "show one-line log for the latest 7 commits"
+  "difftool": {
+    "cmd": "git difftool",
+    "disable_async": true,
+    "help": "show differences using a tool"
   },
-"log":{
-  "cmd": "git log",
-  "disable_async": true,
-  "help": "show logs"
+  "fetch": {
+    "cmd": "git fetch",
+    "allow_all": true,
+    "help": "fetch remote update"
   },
-"merge":{
-  "cmd": "git merge @{u}",
-  "help": "merge remote updates"
+  "last": {
+    "cmd": "git log -1 HEAD",
+    "help": "show log information of HEAD"
   },
-"mergetool":{
-  "cmd": "git mergetool",
-  "disable_async": true,
-  "help": "merge updates with a tool"
+  "lo": {
+    "cmd": "git log --oneline -7",
+    "allow_all": true,
+    "help": "show one-line log for the latest 7 commits"
   },
-"patch":{
-  "cmd": "git format-patch HEAD~",
-  "help": "make a patch"
+  "log": {
+    "cmd": "git log",
+    "disable_async": true,
+    "help": "show logs"
   },
-"pull":{
-  "cmd": "git pull",
-  "allow_all": true,
-  "help": "pull remote updates"
+  "merge": {
+    "cmd": "git merge @{u}",
+    "help": "merge remote updates"
   },
-"push":{
-  "cmd": "git push",
-  "allow_all": true,
-  "help": "push the local updates"
+  "mergetool": {
+    "cmd": "git mergetool",
+    "disable_async": true,
+    "help": "merge updates with a tool"
   },
-"rebase":{
-  "cmd": "git rebase",
-  "help": "rebase from master"
+  "patch": {
+    "cmd": "git format-patch HEAD~",
+    "help": "make a patch"
   },
-"reflog":{
-  "cmd": "git reflog",
-  "help": "show ref logs"
+  "pull": {
+    "cmd": "git pull",
+    "allow_all": true,
+    "help": "pull remote updates"
   },
-"remote":{
-  "cmd": "git remote -v",
-  "help": "show remote settings"
+  "push": {
+    "cmd": "git push",
+    "allow_all": true,
+    "help": "push the local updates"
   },
-"reset":{
-  "cmd": "git reset",
-  "help": "reset repo(s)"
+  "rebase": {
+    "cmd": "git rebase",
+    "help": "rebase from master"
   },
-"show":{
-  "cmd": "git show",
-  "disable_async": true,
-  "help": "show detailed commit information"
+  "reflog": {
+    "cmd": "git reflog",
+    "help": "show ref logs"
   },
-"stash":{
-  "cmd": "git stash",
-  "help": "store uncommited changes"
+  "remote": {
+    "cmd": "git remote -v",
+    "help": "show remote settings"
   },
-"stat":{
-  "cmd": "git diff --stat",
-  "allow_all": true,
-  "help": "show edit statistics"
+  "reset": {
+    "cmd": "git reset",
+    "help": "reset repo(s)"
   },
-"st":{
-  "cmd": "git status",
-  "allow_all": true,
-  "help": "show status"
+  "show": {
+    "cmd": "git show",
+    "disable_async": true,
+    "help": "show detailed commit information"
   },
-"tag":{
-  "cmd": "git tag -n",
-  "help": "show tags"
+  "stash": {
+    "cmd": "git stash",
+    "help": "store uncommited changes"
+  },
+  "stat": {
+    "cmd": "git diff --stat",
+    "allow_all": true,
+    "help": "show edit statistics"
+  },
+  "st": {
+    "cmd": "git status",
+    "allow_all": true,
+    "help": "show status"
+  },
+  "tag": {
+    "cmd": "git tag -n",
+    "help": "show tags"
+  },
+  "yolo": {
+    "cmd": "git fetch && git reset --hard origin/master && git clean -dfx",
+    "allow_all": true,
+    "help": "reset all repos to origin/master, clean untracked files"
   }
 }
